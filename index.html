@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>符号マスター</title>
+</head>
+<body>
+  <h1>符号マスターへの道</h1>
+  <a href="https://book.mynavi.jp/shogi/detail/id=77758">符号の読み方(別サイトへ)<br></a>
+  <select id = "game_mode">
+    <option value= "5" >5問</option>
+    <option value= "10" >10問</option>
+    <option value= "100" >100問</option>
+    <option value= "-1" >エンドレス</option>
+  </select>
+  
+  <a id="start" class="btn"  onclick="gameStart()">スタート</a>
+  <a id="reset" class="btn"  onclick="gameReset()">リセット</a>
+  <table id="board">
+  </table>
+  <p id="seikai"></p>
+  <p id="result"></p>
+  <p id="seikairitsu"></p>
+  <p id="timer"></p>
+
+
+  <audio id="correct_se" preload="auto">
+    <source src="correct.mp3">
+  </audio>
+  <audio id="wrong_se" preload="auto">
+    <source src="wrong.mp3">
+  </audio>
+  <script src="main.js"></script>
+  
+</body>
+</html>
